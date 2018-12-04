@@ -128,7 +128,7 @@ updateCustomer(car, link) {
             id: 'addbtn',
             sortable: false,
             filterable:false,
-            accessor: 'links[0].href',
+            accessor: 'links[2].href',
             Cell: ({value}) => (<InsertTraining 
               addTrainings = {this.addCustomer} 
               date = {this.state.date}

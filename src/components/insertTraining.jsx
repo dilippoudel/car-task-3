@@ -11,7 +11,7 @@ class InsertTraining extends Component {
         })
     }
     fetchTraining = () => {
-        fetch('https://customerrest.herokuapp.com/api/trainings')
+        fetch('https://customerrest.herokuapp.com/gettrainings')
         .then((response) => response.json()) 
         .then((responseData) => { 
           this.setState({ 
@@ -63,7 +63,7 @@ class InsertTraining extends Component {
           </form> 
         </SkyLight>
         <div>
-            <button className = "btn btn-primary" style = {{'margin' : '10px'}} onClick = {() => this.refs.addDialog.show()}>New Training</button>
+            <button className = "btn btn-primary" style = {{'margin' : '10px'}} onClick = {() => this.refs.addDialog.show()}>Add Training</button>
         </div>
             </div>
         );
